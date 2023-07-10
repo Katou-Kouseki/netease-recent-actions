@@ -19,7 +19,7 @@ jobs:
           id: '59878659' # Your NetEase Cloud Music account id
           theme: 'dark' # 主题
           title: '最近在听'
-          size: 800
+          size: 100
 #           width: 410
           type: '1' # 0为所有听过排行
           number: 3 # 歌曲数量
