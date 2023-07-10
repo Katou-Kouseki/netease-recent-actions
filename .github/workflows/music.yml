@@ -7,14 +7,21 @@ on:
     branches: [ main ]
   schedule:
     - cron: '00 22 * * 0'
+  watch:
+    types: [started]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-      - uses: zonemeen/netease-recent-actions@v1.0.33
+      - uses: Katou-Kouseki/netease-recent-actions@main
         with:
-          id: '126764012' # Your NetEase Cloud Music account id
-          size: 60
+          id: '59878659' # Your NetEase Cloud Music account id
+          theme: 'dark' # 主题
+          title: '最近在听'
+          size: 800
+#           width: 410
+          type: '1' # 0为所有听过排行
+          number: 3 # 歌曲数量
+          column: 1 # 列数
+          show_percent: '0' #显示听歌次数
